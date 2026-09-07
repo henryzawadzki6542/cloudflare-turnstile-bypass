@@ -1,0 +1,53 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cloudflare-turnstile-bypass"
+version = "1.0.0"
+description = "Bypass the Cloudflare Turnstile challenge in Python: find the sitekey, solve via the Peak API, and get a valid cf-turnstile-response token - dependency-free, CLI-ready."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Peak" }]
+keywords = [
+  "cloudflare", "cloudflare-turnstile", "turnstile", "turnstile-token",
+  "turnstile-bypass", "turnstile-solver", "cloudflare-bypass", "python", "captcha", "captcha-token", "captcha-solver",
+  "web-scraping", "scraper", "anti-bot", "token", "cli", "automation", "peak",
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Internet :: WWW/HTTP",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = []
+
+[project.scripts]
+cloudflare-turnstile-bypass = "cloudflare_turnstile_bypass:main"
+
+[project.urls]
+Homepage = "https://peak.fo/?utm_source=github&utm_medium=readme&utm_campaign=packages&utm_content=cloudflare-turnstile-bypass"
+Documentation = "https://peak.fo/docs/turnstile?utm_source=github&utm_medium=readme&utm_campaign=packages&utm_content=cloudflare-turnstile-bypass"
+Pricing = "https://peak.fo/pricing?utm_source=github&utm_medium=readme&utm_campaign=packages&utm_content=cloudflare-turnstile-bypass"
+Source = "https://peak.fo/?utm_source=github&utm_medium=readme&utm_campaign=packages&utm_content=cloudflare-turnstile-bypass"
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "cloudflare_turnstile_bypass.py",
+  "README.md",
+  "LICENSE",
+  "examples",
+]
