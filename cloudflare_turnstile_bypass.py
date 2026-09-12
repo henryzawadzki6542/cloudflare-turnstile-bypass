@@ -25,7 +25,7 @@ from dataclasses import dataclass
 from typing import Optional
 from urllib.request import Request, urlopen
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 
 DEFAULT_API_URL = "https://api.peak.fo/solve"
 ENV_API_KEY = "PEAK_API_KEY"
@@ -137,18 +137,23 @@ def bypass_turnstile(
     raise TurnstileBypassError(f"Peak request failed: {last_err}")
 
 
+
 def token_for_page(
     api_key: str,
     url: str,
     proxy: Optional[str] = None,
     html: Optional[str] = None,
+    api_url: str = DEFAULT_API_URL,
+    timeout: float = 180.0,
+    retries: int = 3,
 ) -> BypassResult:
     """One call: find the sitekey on a page, then create a token for it."""
     if html is None:
         html = read_page(url)
     sitekey = find_sitekey(url, html)
     action = find_action(html)
-    return create_token(api_key, sitekey, url, proxy=proxy, action=action)
+    return bypass_turnstile(api_key, sitekey, url, proxy=proxy, action=action,
+                            api_url=api_url, timeout=timeout, retries=retries)
 
 
 def main(argv: Optional[list[str]] = None) -> int:
@@ -173,7 +178,7 @@ def main(argv: Optional[list[str]] = None) -> int:
                                   retries=args.retries)
         else:
             result = token_for_page(args.api_key, args.url, proxy=args.proxy,
-                                    api_url=None)
+                                    api_url=args.api_url, retries=args.retries)
     except TurnstileBypassError as exc:
         print(f"error: {exc}", file=sys.stderr)
         return 1

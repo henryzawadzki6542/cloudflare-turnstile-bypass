@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "cloudflare-turnstile-bypass"
-version = "1.0.0"
+version = "1.0.1"
 description = "Bypass the Cloudflare Turnstile challenge in Python: find the sitekey, solve via the Peak API, and get a valid cf-turnstile-response token - dependency-free, CLI-ready."
 readme = "README.md"
 requires-python = ">=3.8"
