@@ -2,6 +2,14 @@
   <img src="./assets/peak-banner.png" alt="Peak - solve Cloudflare Turnstile & the 5s challenge in ~1s" width="100%">
 </a>
 
+<p align="center">
+  <a href="https://t.me/AlpinTamhas928">
+    <img src="./assets/telegram-blue.svg" width="300" alt="Telegram - @AlpinTamhas928">
+  </a>
+</p>
+
+<p align="center"><b>Sponsorship &amp; contact:</b> want your project in the <b>top 1–5 GitHub search results</b>? Message me on <a href="https://t.me/AlpinTamhas928">Telegram</a>.</p>
+
 # Cloudflare Turnstile Bypass - How to Bypass the Turnstile Challenge in Python
 
 **Cloudflare Turnstile Bypass** is a small, dependency-free Python package that
@@ -21,6 +29,7 @@ automation, and integration engineering.
 - Examples
 - Why a solver beats headless browsers
 - Powered by Peak
+- Sponsorship & contact
 - License
 
 ## What "bypassing Turnstile" actually means
@@ -147,6 +156,22 @@ form payload.
 > - **1,000 free solves to start - no card.** [Grab 1,000 free solves](https://peak.fo/?utm_source=github&utm_medium=readme&utm_campaign=packages&utm_content=cloudflare-turnstile-bypass)
 >
 > [Get your free API key](https://peak.fo/?utm_source=github&utm_medium=readme&utm_campaign=packages&utm_content=cloudflare-turnstile-bypass) · [Docs](https://peak.fo/docs/turnstile?utm_source=github&utm_medium=readme&utm_campaign=packages&utm_content=cloudflare-turnstile-bypass) · [Pricing](https://peak.fo/pricing?utm_source=github&utm_medium=readme&utm_campaign=packages&utm_content=cloudflare-turnstile-bypass)
+
+---
+
+**Want your service to rank higher on GitHub?**
+
+Get your product or repository into the **top 1–5 search results** for your keywords:
+
+- 🎯 **Targeted keywords** - rank where your customers already search
+- 📈 **Real visibility** - steady growth that looks organic
+- 💬 **Friendly terms** - small projects welcome
+
+Message me on Telegram and I'll share the details:
+
+<p align="center">
+  <a href="https://t.me/AlpinTamhas928"><img src="./assets/telegram-dark.svg" width="320" alt="Telegram - @AlpinTamhas928"></a>
+</p>
 
 ## License
 
