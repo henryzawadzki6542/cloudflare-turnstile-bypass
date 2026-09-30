@@ -2,14 +2,6 @@
   <img src="./assets/peak-banner.png" alt="Peak - solve Cloudflare Turnstile & the 5s challenge in ~1s" width="100%">
 </a>
 
-<p align="center">
-  <a href="https://t.me/AlpinTamhas928">
-    <img src="./assets/telegram-blue.svg" width="300" alt="Telegram - @AlpinTamhas928">
-  </a>
-</p>
-
-<p align="center"><b>Sponsorship &amp; contact:</b> want your project in the <b>top 1–5 GitHub search results</b>? Message me on <a href="https://t.me/AlpinTamhas928">Telegram</a>.</p>
-
 # Cloudflare Turnstile Bypass - How to Bypass the Turnstile Challenge in Python
 
 **Cloudflare Turnstile Bypass** is a small, dependency-free Python package that
@@ -18,6 +10,13 @@ Turnstile sitekey** on any page, **creates a valid `cf-turnstile-response`
 token** via the Peak API, and hands you the finished token - no browser, no
 headless Chrome, no fingerprint fight. Designed for CI pipelines, QA
 automation, and integration engineering.
+
+<a href="https://peak.fo/?utm_source=github&utm_medium=readme&utm_campaign=packages&utm_content=cloudflare-turnstile-bypass"><img src="./assets/btn-free-key.png" alt="Get Free 1000 Solves" height="46"></a>
+&nbsp;
+<a href="https://peak.fo/?utm_source=github&utm_medium=readme&utm_campaign=packages&utm_content=cloudflare-turnstile-bypass#pricing"><img src="./assets/btn-pricing.png" alt="Pricing" height="46"></a>
+&nbsp;
+<a href="https://peak.fo/docs/turnstile?utm_source=github&utm_medium=readme&utm_campaign=packages&utm_content=cloudflare-turnstile-bypass"><img src="./assets/btn-docs.png" alt="Read the docs" height="46"></a>
+
 
 **Table of Contents:**
 - What "bypassing Turnstile" actually means
