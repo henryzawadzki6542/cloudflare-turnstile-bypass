@@ -27,6 +27,7 @@ automation, and integration engineering.
 - CLI usage
 - Examples
 - Why a solver beats headless browsers
+- FAQ
 - Powered by Peak
 - Sponsorship & contact
 - License
@@ -148,6 +149,31 @@ form payload.
   Chromium build on your CI runner.
 - **Pay for success.** Failed solves cost nothing; a headless fleet burns
   compute whether it passes or not.
+
+## FAQ
+
+**Does this attack Cloudflare's edge?**
+
+No. It solves the widget's challenge for the page's sitekey through the Peak
+API and injects the resulting token into your request - exactly what the edge
+sees after a real visitor completes the widget.
+
+**Does it work with invisible or enterprise widgets?**
+
+Yes. Invisible widgets render the same `data-sitekey` attribute, and the
+sitekey regex also matches `sitekey=` and `render=` when the widget is built
+from JavaScript. If you already know the sitekey, pass it directly and skip
+the discovery step.
+
+**Do I need Selenium or a headless browser?**
+
+No. There is no browser anywhere in the flow - one dependency-free Python
+file. That is also why there is no fingerprint to fight and nothing to keep
+patched when Chromium changes.
+
+**Where do I get an API key?**
+
+Create a free key at [Peak](https://peak.fo/?utm_source=github&utm_medium=readme&utm_campaign=packages&utm_content=cloudflare-turnstile-bypass) - no card required, and it starts with **1,000 free solves**. Use code **`PEAKGH`** for bonus trial credit.
 
 > This package uses [Peak](https://peak.fo/?utm_source=github&utm_medium=readme&utm_campaign=packages&utm_content=cloudflare-turnstile-bypass) to solve Turnstile.
 > - Solve Cloudflare Turnstile & the 5s challenge in about a second
